@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПАО «Газпром» - Официальный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.gazprom.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Верхняя панель -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-links">
+                <a href="#" id="language-toggle"><i class="fas fa-globe"></i> English</a>
+                <a href="#" id="search-toggle"><i class="fas fa-search"></i> Поиск</a>
+            </div>
+            <div class="top-actions">
+                <a href="#investors-modal" class="btn-outline modal-trigger">Для инвесторов</a>
+                <a href="#suppliers-modal" class="btn-outline modal-trigger">Для поставщиков</a>
+                <a href="#" id="login-btn" class="btn-primary"><i class="fas fa-user"></i> Личный кабинет</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма поиска -->
+    <div id="search-form" class="search-form">
+        <div class="container">
+            <form id="search-form-element">
+                <input type="text" placeholder="Введите поисковый запрос..." id="search-input">
+                <button type="submit"><i class="fas fa-search"></i></button>
+                <button type="button" id="search-close"><i class="fas fa-times"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Основная навигация -->
+    <header class="main-header">
+        <div class="container">
+            <!-- Логотип и название -->
+            <div class="logo-section">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <a href="#">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbQOuZm2I8QR7TLq7KWDAb-MPPIEGDe98kEg&s" alt="Газпром"> 
+                        </a> 
+                    </div>
+                    <div class="logo-text">
+                        <h1>ПАО «Газпром»</h1>
+                        <p class="tagline">Энергия для развития</p>
+                    </div>
+                </div>
+                
+                <!-- Информация в шапке -->
+                <div class="header-info">
+                    <div class="stock-info">
+                        <span class="stock-label">Акции Газпрома</span>
+                        <span class="stock-price">198,45 ₽ <span class="stock-change positive">+1,2%</span></span>
+                    </div>
+                    <div class="header-contacts">
+                        <i class="fas fa-phone"></i>
+                        <span>8 800 100-00-00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Главное меню -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="active" data-section="home"><i class="fas fa-home"></i> Главная</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-section="about"><i class="fas fa-building"></i> О компании <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#" data-modal="mission">Миссия и стратегия</a>
+                            <a href="#" data-modal="history">История</a>
+                            <a href="#" data-modal="management">Руководство</a>
+                            <a href="#" data-modal="structure">Структура</a>
+                        </div>
+                    </li>
+                    <li><a href="#" data-section="investors"><i class="fas fa-chart-line"></i> Инвесторам</a></li>
+                    <li><a href="#" data-section="partners"><i class="fas fa-handshake"></i> Партнерам</a></li>
+                    <li><a href="#" data-section="news"><i class="fas fa-newspaper"></i> Пресс-центр</a></li>
+                    <li><a href="#" data-section="career"><i class="fas fa-briefcase"></i> Карьера</a></li>
+                    <li><a href="#" data-modal="contacts"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+                
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero-секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Крупнейший производитель<br>природного газа в мире</h2>
+                <p>Более 30 лет обеспечиваем энергетическую безопасность страны и развиваем международное сотрудничество</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary btn-large" data-modal="about-company">Узнать больше <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Быстрые ссылки -->
+            <div class="quick-links">
+                <a href="#" class="quick-link" data-modal="finance">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span>Финансовые результаты</span>
+                </a>
+                <a href="#" class="quick-link" data-modal="calendar">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Календарь событий</span>
+                </a>
+                <a href="#" class="quick-link" data-modal="tenders">
+                    <i class="fas fa-tasks"></i>
+                    <span>Закупки и тендеры</span>
+                </a>
+                <a href="#" class="quick-link" data-modal="vacancies">
+                    <i class="fas fa-users"></i>
+                    <span>Вакансии</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <main class="container main-content">
+        <!-- Новости -->
+        <section class="news-section">
+            <div class="section-header">
+                <h2><i class="fas fa-newspaper"></i> Последние новости</h2>
+                <a href="#" class="view-all" data-section="news">Все новости <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card featured" data-news="1">
+                    <div class="news-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">15 мая 2025</span>
+                        <h3>Газпром и CNPC подписали новое соглашение о стратегическом сотрудничестве</h3>
+                        <p>Документ предусматривает расширение взаимодействия в области поставок природного газа и реализации совместных проектов.</p>
+                        <a href="#" class="read-more" data-news="1">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-news="2">
+                    <div class="news-content">
+                        <span class="news-date">14 мая 2025</span>
+                        <h3>Запущен новый участок газопровода «Сила Сибири»</h3>
+                        <p>Введен в эксплуатацию участок магистрального газопровода протяженностью 150 км.</p>
+                        <a href="#" class="read-more" data-news="2">Читать полностью</a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-news="3">
+                    <div class="news-content">
+                        <span class="news-date">13 мая 2025</span>
+                        <h3>Газпром повышает эффективность добычи на месторождениях Ямала</h3>
+                        <p>Внедрены новые технологии, позволившие увеличить добычу на 5%.</p>
+                        <a href="#" class="read-more" data-news="3">Читать полностью</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Интерактивные сервисы -->
+        <section class="services-section">
+            <h2><i class="fas fa-sliders-h"></i> Онлайн-сервисы</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Документы для скачивания</h3>
+                    <p>Годовые отчеты, презентации, решения собраний</p>
+                    <a href="#" class="btn-outline" data-modal="documents">Перейти к документам</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Портал поставщиков</h3>
+                    <p>Тендеры, требования, оформление заявок</p>
+                    <a href="#" class="btn-outline" data-modal="suppliers">Для партнеров</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Обратная связь</h3>
+                    <p>Задайте вопрос или оставьте обращение</p>
+                    <a href="#" class="btn-outline" data-modal="feedback">Связаться с нами</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Карьерный портал</h3>
+                    <p>Актуальные вакансии и стажировки</p>
+                    <a href="#" class="btn-outline" data-modal="career-portal">Найти работу</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span>ПАО «Газпром»</span>
+                    </div>
+                    <p class="footer-description">
+                        Ведущая энергетическая компания России и один из крупнейших в мире производителей природного газа.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-modal="mission">О компании</a></li>
+                        <li><a href="#" data-modal="strategy">Стратегия</a></li>
+                        <li><a href="#" data-modal="sustainability">Устойчивое развитие</a></li>
+                        <li><a href="#" data-modal="innovations">Инновации</a></li>
+                        <li><a href="#" data-modal="projects">Проекты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Инвесторам</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-modal="stocks">Акции и дивиденды</a></li>
+                        <li><a href="#" data-modal="finance-full">Финансовые результаты</a></li>
+                        <li><a href="#" data-modal="disclosure">Раскрытие информации</a></li>
+                        <li><a href="#" data-modal="corporate">Корпоративное управление</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-modal="address"><i class="fas fa-map-marker-alt"></i> Москва, ул. Наметкина, 16</a></li>
+                        <li><a href="tel:+74995034040"><i class="fas fa-phone"></i> +7 499 503-40-40</a></li>
+                        <li><a href="mailto:info@gazprom.ru"><i class="fas fa-envelope"></i> info@gazprom.ru</a></li>
+                        <li><a href="#" data-modal="privacy"><i class="fas fa-shield-alt"></i> Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 ПАО «Газпром». Все права защищены.</p>
+                <p>Это демонстрационная версия модернизированного сайта для курсовой работы</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== МОДАЛЬНЫЕ ОКНА ==================== -->
+    
+    <!-- Окно авторизации -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-circle"></i> Личный кабинет</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="login-form">
+                    <h4>Вход в систему</h4>
+                    <form id="login-form-element">
+                        <div class="form-group">
+                            <label for="username">Логин или Email</label>
+                            <input type="text" id="username" placeholder="Введите логин" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <input type="password" id="password" placeholder="Введите пароль" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Войти</button>
+                        <p class="form-note">Демо-доступ: логин: <strong>demo</strong>, пароль: <strong>demo123</strong></p>
+                    </form>
+                    <div class="form-footer">
+                        <a href="#" id="show-register">Регистрация</a>
+                        <a href="#" id="show-forgot">Забыли пароль?</a>
+                    </div>
+                </div>
+                
+                <div id="register-form" style="display: none;">
+                    <h4>Регистрация</h4>
+                    <form id="register-form-element">
+                        <div class="form-group">
+                            <label for="reg-email">Email</label>
+                            <input type="email" id="reg-email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">Пароль</label>
+                            <input type="password" id="reg-password" placeholder="Не менее 8 символов" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-confirm">Подтверждение пароля</label>
+                            <input type="password" id="reg-confirm" placeholder="Повторите пароль" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Зарегистрироваться</button>
+                    </form>
+                    <div class="form-footer">
+                        <a href="#" id="show-login">Уже есть аккаунт? Войти</a>
+                    </div>
+                </div>
+                
+                <div id="forgot-form" style="display: none;">
+                    <h4>Восстановление пароля</h4>
+                    <form id="forgot-form-element">
+                        <div class="form-group">
+                            <label for="forgot-email">Email</label>
+                            <input type="email" id="forgot-email" placeholder="Введите ваш email" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Отправить ссылку</button>
+                    </form>
+                    <div class="form-footer">
+                        <a href="#" id="show-login-from-forgot">Вернуться ко входу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Личный кабинет (после входа) -->
+   <div id="account-modal" class="modal">
+        <div class="modal-content wide">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-circle"></i> Личный кабинет</h3>
+                <div class="user-info">
+                    <span id="user-name">Демо Пользователь</span>
+                    <button id="logout-btn" class="btn-outline"><i class="fas fa-sign-out-alt"></i> Выйти</button>
+                </div>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="account-tabs">
+                    <button class="tab-btn active" data-tab="profile">Профиль</button>
+                    <button class="tab-btn" data-tab="documents">Мои документы</button>
+                    <button class="tab-btn" data-tab="applications">Мои заявки</button>
+                    <button class="tab-btn" data-tab="settings">Настройки</button>
+                </div>
+                
+                <div class="tab-content active" id="profile-tab">
+                    <div class="profile-header">
+                        <div class="avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h4>Демо Пользователь</h4>
+                            <p>demo@gazprom.ru</p>
+                            <p class="member-since">Участник с мая 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-details">
+                        <h5>Личная информация</h5>
+                        <form id="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Имя</label>
+                                    <input type="text" value="Демо" id="first-name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Фамилия</label>
+                                    <input type="text" value="Пользователь" id="last-name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Компания</label>
+                                <input type="text" value="ООО 'Демо Компания'" id="company">
+                            </div>
+                            <div class="form-group">
+                                <label>Телефон</label>
+                                <input type="tel" value="+7 (900) 123-45-67" id="phone">
+                            </div>
+                            <button type="submit" class="btn-primary">Сохранить изменения</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="documents-tab">
+                    <h5>Загруженные документы</h5>
+                    <div class="documents-list">
+                        <div class="document-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="document-info">
+                                <h6>Заявление на участие в тендере №2456</h6>
+                                <p>Загружено: 15.05.2025 | Статус: <span class="status-review">На рассмотрении</span></p>
+                            </div>
+                            <button class="btn-outline"><i class="fas fa-download"></i></button>
+                        </div>
+                        <div class="document-item">
+                            <i class="fas fa-file-excel"></i>
+                            <div class="document-info">
+                                <h6>Финансовое предложение</h6>
+                                <p>Загружено: 10.05.2025 | Статус: <span class="status-approved">Одобрено</span></p>
+                            </div>
+                            <button class="btn-outline"><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                    <button class="btn-primary"><i class="fas fa-upload"></i> Загрузить новый документ</button>
+                </div>
+                
+                <div class="tab-content" id="applications-tab">
+                    <h5>История обращений</h5>
+                    <div class="applications-list">
+                        <div class="application-item">
+                            <div class="app-header">
+                                <h6>Вопрос по договору поставки</h6>
+                                <span class="app-date">16.05.2025</span>
+                            </div>
+                            <p class="app-text">Прошу уточнить условия пункта 4.2 договора...</p>
+                            <div class="app-footer">
+                                <span class="status-processing">В обработке</span>
+                                <button class="btn-outline">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-header">
+                                <h6>Запрос коммерческого предложения</h6>
+                                <span class="app-date">12.05.2025</span>
+                            </div>
+                            <p class="app-text">Прошу направить КП на поставку оборудования...</p>
+                            <div class="app-footer">
+                                <span class="status-completed">Завершено</span>
+                                <button class="btn-outline">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary" data-modal="feedback"><i class="fas fa-plus"></i> Новое обращение</button>
+                </div>
+                
+                <div class="tab-content" id="settings-tab">
+                    <h5>Настройки аккаунта</h5>
+                    <form id="settings-form">
+                        <div class="form-group">
+                            <label>Уведомления по email</label>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Подписка на новости</label>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Смена пароля</label>
+                            <input type="password" placeholder="Новый пароль">
+                        </div>
+                        <button type="submit" class="btn-primary">Сохранить настройки</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

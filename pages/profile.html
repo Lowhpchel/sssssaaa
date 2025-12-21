@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .profile-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .info-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #555;
+            width: 150px;
+        }
+        .info-value {
+            color: #333;
+            flex: 1;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-logout {
+            background: #dc3545;
+            color: white;
+        }
+        .btn-logout:hover {
+            background: #c82333;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👤 Личный кабинет</h1>
+        
+        <div id="loadingMessage" class="loading">
+            Загрузка данных...
+        </div>
+
+        <div id="profileContent" style="display: none;">
+            <div class="profile-info">
+                <div class="info-row">
+                    <div class="info-label">Email:</div>
+                    <div class="info-value" id="userEmail">-</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Полное имя:</div>
+                    <div class="info-value" id="userName">-</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Телефон:</div>
+                    <div class="info-value" id="userPhone">-</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Дата регистрации:</div>
+                    <div class="info-value" id="userCreated">-</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Последний вход:</div>
+                    <div class="info-value" id="userLastLogin">-</div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn-logout" id="logoutBtn">Выйти</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/profile.js"></script>
+</body>
+</html>
