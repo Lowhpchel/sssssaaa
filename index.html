@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПАО «Газпром» - Официальный сайт</title>
+    <title>ПАО «Газпром»</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://www.gazprom.com/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Верхняя панель -->
+
     <div class="top-bar">
         <div class="container">
             <div class="top-links">
-                <a href="#" id="language-toggle"><i class="fas fa-globe"></i> English</a>
-                <a href="#" id="search-toggle"><i class="fas fa-search"></i> Поиск</a>
+
             </div>
             <div class="top-actions">
                 <a href="#investors-modal" class="btn-outline modal-trigger">Для инвесторов</a>
@@ -25,7 +24,7 @@
         </div>
     </div>
 
-    <!-- Форма поиска -->
+
     <div id="search-form" class="search-form">
         <div class="container">
             <form id="search-form-element">
@@ -36,10 +35,10 @@
         </div>
     </div>
 
-    <!-- Основная навигация -->
+
     <header class="main-header">
         <div class="container">
-            <!-- Логотип и название -->
+
             <div class="logo-section">
                 <div class="logo">
                     <div class="logo-icon">
@@ -52,8 +51,7 @@
                         <p class="tagline">Энергия для развития</p>
                     </div>
                 </div>
-                
-                <!-- Информация в шапке -->
+
                 <div class="header-info">
                     <div class="stock-info">
                         <span class="stock-label">Акции Газпрома</span>
@@ -66,24 +64,20 @@
                 </div>
             </div>
 
-            <!-- Главное меню -->
+
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="#" class="active" data-section="home"><i class="fas fa-home"></i> Главная</a></li>
                     <li class="dropdown">
-                        <a href="#" data-section="about"><i class="fas fa-building"></i> О компании <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" data-section="about"><i class="fas fa-building"></i> О компании <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-menu">
-                            <a href="#" data-modal="mission">Миссия и стратегия</a>
-                            <a href="#" data-modal="history">История</a>
-                            <a href="#" data-modal="management">Руководство</a>
-                            <a href="#" data-modal="structure">Структура</a>
+                            <a href="#mission-modal" class="modal-trigger">Миссия и стратегия</a>
+                            <a href="#history-modal" class="modal-trigger">История</a>
+                            <a href="#management-modal" class="modal-trigger">Руководство</a>
+                            <a href="#structure-modal" class="modal-trigger">Структура</a>
                         </div>
-                    </li>
-                    <li><a href="#" data-section="investors"><i class="fas fa-chart-line"></i> Инвесторам</a></li>
-                    <li><a href="#" data-section="partners"><i class="fas fa-handshake"></i> Партнерам</a></li>
-                    <li><a href="#" data-section="news"><i class="fas fa-newspaper"></i> Пресс-центр</a></li>
-                    <li><a href="#" data-section="career"><i class="fas fa-briefcase"></i> Карьера</a></li>
-                    <li><a href="#" data-modal="contacts"><i class="fas fa-envelope"></i> Контакты</a></li>
+                     </li>
+
                 </ul>
                 
                 <div class="mobile-menu-toggle">
@@ -93,42 +87,25 @@
         </div>
     </header>
 
-    <!-- Hero-секция -->
+
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h2>Крупнейший производитель<br>природного газа в мире</h2>
                 <p>Более 30 лет обеспечиваем энергетическую безопасность страны и развиваем международное сотрудничество</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn-primary btn-large" data-modal="about-company">Узнать больше <i class="fas fa-arrow-right"></i></a>
+                    <a href="#about-company-modal" class="btn-primary btn-large modal-trigger">Узнать больше <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             
-            <!-- Быстрые ссылки -->
-            <div class="quick-links">
-                <a href="#" class="quick-link" data-modal="finance">
-                    <i class="fas fa-file-invoice-dollar"></i>
-                    <span>Финансовые результаты</span>
-                </a>
-                <a href="#" class="quick-link" data-modal="calendar">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>Календарь событий</span>
-                </a>
-                <a href="#" class="quick-link" data-modal="tenders">
-                    <i class="fas fa-tasks"></i>
-                    <span>Закупки и тендеры</span>
-                </a>
-                <a href="#" class="quick-link" data-modal="vacancies">
-                    <i class="fas fa-users"></i>
-                    <span>Вакансии</span>
-                </a>
-            </div>
+
+
         </div>
     </section>
 
-    <!-- Основной контент -->
+
     <main class="container main-content">
-        <!-- Новости -->
+
         <section class="news-section">
             <div class="section-header">
                 <h2><i class="fas fa-newspaper"></i> Последние новости</h2>
@@ -167,7 +144,7 @@
                 </article>
             </div>
         </section>
-        <!-- Интерактивные сервисы -->
+
         <section class="services-section">
             <h2><i class="fas fa-sliders-h"></i> Онлайн-сервисы</h2>
             
@@ -211,7 +188,7 @@
         </section>
     </main>
 
-    <!-- Подвал -->
+
     <footer class="main-footer">
         <div class="container">
             <div class="footer-grid">
@@ -263,15 +240,14 @@
             </div>
             
             <div class="footer-bottom">
-                <p>© 2025 ПАО «Газпром». Все права защищены.</p>
-                <p>Это демонстрационная версия модернизированного сайта для курсовой работы</p>
+
             </div>
         </div>
     </footer>
 
-    <!-- ==================== МОДАЛЬНЫЕ ОКНА ==================== -->
+
     
-    <!-- Окно авторизации -->
+
     <div id="login-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -338,7 +314,7 @@
         </div>
     </div>
 
-    <!-- Личный кабинет (после входа) -->
+
    <div id="account-modal" class="modal">
         <div class="modal-content wide">
             <div class="modal-header">
@@ -474,6 +450,250 @@
             </div>
         </div>
     </div>
+
+    </div> <!-- конец #account-modal -->
+
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ИНВЕСТОРОВ -->
+    <div id="investors-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-chart-line"></i> Для инвесторов</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4>Программы модернизации 2026–2030</h4>
+                <p>Правление «Газпрома» утвердило комплексные программы технического перевооружения и реконструкции инфраструктуры.</p>
+                <ul class="news-list">
+                    <li>Реконструкция электро-, тепло- и водоснабжения</li>
+                    <li>Внедрение российских ПАК автоматизации</li>
+                    <li>Повышение эффективности производства на 15%</li>
+                </ul>
+                <div class="modal-actions">
+                    <a href="https://www.gazprom.ru/investors/" class="btn-primary" target="_blank">Перейти к инвесторам</a>
+                    <a href="#" class="btn-outline">Финансовая отчетность</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ПОСТАВЩИКОВ -->
+    <div id="suppliers-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-handshake"></i> Для поставщиков</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+    <h4>Портал поставщиков Газпрома</h4>
+    <p>Актуальные закупки и тендеры Группы Газпром на 2026 год. Зарегистрируйтесь для участия в конкурсах.</p>
+    
+    <div class="suppliers-highlight">
+        <h5>🔥 Текущие крупные тендеры</h5>
+        <ul class="news-list">
+            <li><strong>169 млн ₽</strong> — Поставка хозяйственных товаров (ООО "Газпром переработка Благовещенск") [до 29.01.2026][web:12]</li>
+            <li><strong>11,8 млн ₽</strong> — Трубы и арматура (Газпром теплоэнерго Архангельск) [web:15]</li>
+            <li><strong>5,4 млн ₽</strong> — Закупки в Пермском крае [web:12]</li>
+        </ul>
+    </div>
+    
+    <div class="suppliers-info">
+        <h5>Ключевые направления</h5>
+        <ul class="news-list">
+            <li>Импортозамещение — специальный раздел на портале контрагентов[web:13]</li>
+            <li>Модернизация CRM-систем и оборудования[web:17]</li>
+            <li>День поставщика прошел в Тюмени (TNF-2025)[web:16]</li>
+        </ul>
+    </div>
+    
+    <div class="modal-actions">
+        <a href="https://gazpromzakupki.ru/" class="btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Газпром закупки</a>
+        <a href="https://zakupki.gazprom-neft.ru/" class="btn-outline" target="_blank"><i class="fas fa-shopping-cart"></i> Тендеры Газпром нефть</a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- МОДАЛЬНОЕ ОКНО "УЗНАТЬ БОЛЬШЕ" -->
+<div id="about-company-modal" class="modal">
+    <div class="modal-content wide">
+        <div class="modal-header">
+            <h3><i class="fas fa-building"></i> Крупнейший производитель природного газа</h3>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">682,8 млрд м³</div>
+                    <div class="stat-label">Добыча газа в 2025 году</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">>17 000 км</div>
+                    <div class="stat-label">Газопроводов построено</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">>500 000</div>
+                    <div class="stat-label">Сотрудников</div>
+                </div>
+            </div>
+            
+            <h4>Ключевые факты 2026</h4>
+            <ul class="news-list">
+                <li>Лидер по добыче газа в мире — более 30 лет</li>
+                <li>Стратегическое партнерство с CNPC (Китай)</li>
+                <li>Запуск новых участков «Силы Сибири»</li>
+                <li>Программы модернизации до 2030 года</li>
+            </ul>
+            
+            <div class="about-highlights">
+                <h5>✅ Достижения 2025:</h5>
+                <p><strong>«Сила Сибири-2»</strong> — переговоры о поставках 50 млрд м³/год<br>
+                <strong>Цифровизация</strong> — автоматизация 85% объектов<br>
+                <strong>Импортозамещение</strong> — 95% оборудования отечественное</p>
+            </div>
+            
+            <div class="modal-actions">
+                <a href="https://www.gazprom.ru/about/" class="btn-primary" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Официальный сайт
+                </a>
+                <a href="#" class="btn-outline" data-section="news">
+                    <i class="fas fa-newspaper"></i> Последние новости
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- МОДАЛКА: Миссия и стратегия -->
+<div id="mission-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-compass"></i> Миссия и стратегия</h3>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <h4>Миссия Газпрома</h4>
+            <blockquote>"Обеспечение энергетической безопасности России и надежные поставки газа потребителям"</blockquote>
+            
+            <h5>Стратегия до 2035 года</h5>
+            <ul class="news-list">
+                <li>Добыча газа: 682+ млрд м³/год</li>
+                <li>Экспорт в Китай: 50 млрд м³ по "Силе Сибири-2"</li>
+                <li>Цифровизация: 90% объектов автоматизировано</li>
+                <li>Экология: водородные проекты с 2028</li>
+            </ul>
+            
+            <div class="modal-actions">
+                <a href="https://www.gazprom.ru/strategy-documents/" class="btn-primary" target="_blank">Стратегия 2035</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- МОДАЛКА: История -->
+<div id="history-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-history"></i> История компании</h3>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">1989</span>
+                    <div>Создание Министерства газовой промышленности</div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">1993</span>
+                    <div>Основание ОАО "Газпром"</div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2005</span>
+                    <div>Приватизация, 50%+1 акция в госсобственности</div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2025</span>
+                    <div>Запуск "Силы Сибири-2", лидерство в мире</div>
+                </div>
+            </div>
+            <p class="timeline-note">Более 30 лет лидерства в газовой отрасли</p>
+        </div>
+    </div>
+</div>
+
+<!-- МОДАЛКА: Руководство -->
+<div id="management-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-users"></i> Руководство</h3>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <h4>Председатель Правления</h4>
+            <div class="manager-card">
+                <div class="manager-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="manager-info">
+                    <h5>Алексей Миллер</h5>
+                    <p>Председатель Правления с 2001 года</p>
+                    <p>Опыт в правительстве и экономике</p>
+                </div>
+            </div>
+            
+            <h5>Правление (9 членов)</h5>
+            <ul class="news-list">
+                <li>Финансы и инвестиции</li>
+                <li>Газотранспорт и инфраструктура</li>
+                <li>Маркетинг и экспорт</li>
+                <li>Цифровая трансформация</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- МОДАЛКА: Структура -->
+<div id="structure-modal" class="modal">
+    <div class="modal-content wide">
+        <div class="modal-header">
+            <h3><i class="fas fa-sitemap"></i> Корпоративная структура</h3>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <h4>Группа Газпром — 1000+ организаций</h4>
+            
+            <div class="structure-grid">
+                <div class="structure-block">
+                    <h5><i class="fas fa-university"></i> ПАО "Газпром"</h5>
+                    <p>Стратегическое управление</p>
+                </div>
+                <div class="structure-block">
+                    <h5><i class="fas fa-industry"></i> Добыча</h5>
+                    <p>Газпром добыча, Ямбург, Надым</p>
+                </div>
+                <div class="structure-block">
+                    <h5><i class="fas fa-shipping-fast"></i> Транспорт</h5>
+                    <p>Газпром трансгаз (70+ компаний)</p>
+                </div>
+                <div class="structure-block">
+                    <h5><i class="fas fa-globe"></i> Экспорт</h5>
+                    <p>Газпром экспорт, Газпром Германия</p>
+                </div>
+            </div>
+            
+            <div class="structure-key">
+                <h5>Ключевые "дочки":</h5>
+                <ul class="news-list">
+                    <li>Газпром нефть (нефтегаз)</li>
+                    <li>Газпромбанк (финансы)</li>
+                    <li>Газпром информ (цифровизация)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <script src="scripts/script.js"></script>
 </body>

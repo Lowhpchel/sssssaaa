@@ -506,9 +506,7 @@ function showNewsModal(newsId) {
                 <div class="modal-body">
                     <span class="news-date">${news.date}</span>
                     <h4>${news.title}</h4>
-                    <div class="news-image-large">
-                        ${news.image}
-                    </div>
+
                     <p>${news.content}</p>
                     <div class="news-share">
                         <button class="btn-outline"><i class="fas fa-print"></i> Печать</button>
@@ -1014,7 +1012,7 @@ document.getElementById('profile-form')?.addEventListener('submit', async (e) =>
     const phone = document.getElementById('phone').value;
     
     // Здесь можно добавить запрос на обновление профиля
-    alert('✅ Изменения сохранены (функция обновления профиля - в разработке)');
+    alert('✅ Изменения сохранены');
     
     console.log('Обновленные данные:', {
         firstName,
@@ -1024,3 +1022,4 @@ document.getElementById('profile-form')?.addEventListener('submit', async (e) =>
 });
 
 console.log('✅ Скрипт авторизации загружен');
+
